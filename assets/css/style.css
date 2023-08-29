@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(239, 239, 239);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20px;
+    
+}
+.container-wrapper {
+    position: relative;
+	padding: 40px;
+	background-color: white;
+	border-radius: 15px;
+	border-bottom-right-radius: 100px;
+	width: 510px;
+}
+
+.input-wrapper {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+label {
+    letter-spacing: 0.3rem;
+    color: rgb(123, 123, 123);
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+input {
+    padding: 15px;
+    border-radius: 7px;
+    border: 1px solid rgb(165, 165, 165);
+    outline: none;
+    width: 100px;
+    transition: all .5s ease;
+}
+
+input::placeholder {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#resultDate {
+	position: absolute;
+	right: 42px;
+	top: 130px;
+	padding: 10px;
+	background-color: rgb(153, 84, 199);
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+    transition: all .3s ease;
+}
+#resultDate:hover {
+    transition: all .3s ease;
+    background-color: rgb(24, 24, 25);
+}
+.img-date {
+    width: 32px;
+    height: 30px;
+}
+
+hr {
+	border: 0.5px solid rgb(224, 224, 224);
+	margin: 44px 0 30px 0;
+}
+
+.years, .months, .days {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 60px;
+}
+
+.years > span, .months > span, .days > span{
+    color: rgb(153, 84, 199);
+    font-weight: 800;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.text {
+    font-style: italic;
+    font-weight: 800;
+}
+
+.button-wrapper {
+    position: relative;
+}
+
+
+.messageError {
+    position: absolute;
+    top: 600px;
+    left: -500px;
+    display: inline-flex;
+    background-color: rgb(202, 77, 77);
+    margin: 20px;
+    border-radius: 7px;
+    transition: all .5s ease-in-out;
+}
+
+
+.errorWrap {
+    color: white;
+    margin: 20px;
+}
+
+.close {
+    cursor: pointer;
+    background-color: rgb(157, 25, 25);
+    color: white;
+    padding: 20px;
+    border-radius: 7px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.active {
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+
+@media (max-width: 473px) {
+    .days, .months, .years {
+        font-size: 45px;
+    }
+    .years > span, .months > span, .days > span{
+        font-size: 45px;
+    }
+    .container-wrapper {
+        width: 100%;
+    }
+    input {
+        width: 60px;
+    }
+    label {
+        font-size: 10px;
+    }
+    #resultDate {
+        right: 140px;
+    }
+    .messageError {
+        top: 60px;
+    }
+}

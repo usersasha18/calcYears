@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="container-wrapper">
+        <form>
+          <div class="input-wrapper">
+            <label for="input1">DAY</label>
+            <input type="text" id="input1" name="input1" placeholder="DD">
+        </div>
+        
+        <div class="input-wrapper">
+            <label for="input2">MONTH</label>
+            <input type="text" id="input2" name="input2" placeholder="MM">
+        </div>
+        
+        <div class="input-wrapper">
+            <label for="input3">YEAR</label>
+            <input type="text" id="input3" name="input3" placeholder="YYYY">
+        </div>
+        <button id="resultDate">
+          <img class="img-date" src="./assets/images/icon-arrow.svg" alt="">
+        </button>
+      </form>
+        <hr>
+        <div class="outputDate">
+          <div class="years">
+            <span>- -</span><p class="text">years</p>
+          </div>
+          <div class="months">
+            <span>- -</span><p class="text">months</p> 
+          </div>
+          <div class="days">
+            <span>- -</span><p class="text">days</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="messageError">
+      <div class="errorWrap">
+        Сообщение об ошибке
+      </div>
+      <div class="close">X</div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
